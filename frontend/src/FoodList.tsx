@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { food } from './types/food';
 
 function FoodList() {
-  const { foods, setFoods } = useState<food[]>([]);
+  const [foods, setFoods] = useState<food[]>([]);
 
   useEffect(() => {
     const fetchFood = async () => {
